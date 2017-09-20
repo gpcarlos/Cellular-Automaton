@@ -45,7 +45,7 @@ public class GUI{
     JButton btnCA2DSimulator = new JButton("CA2D Simulator");
     JButton btnMandelbrotSet = new JButton("Mandelbrot Set");
     JButton btnGameOfLife = new JButton("Game Of Life");
-    JButton btnChemicalReaction = new JButton("Chemical Reaction");
+    JButton btnChemicalReaction = new JButton("BZ Reaction");
     JButton btnTumorGrowth = new JButton("Tumor Growth");
     JButton btnBack = new JButton("< Back");
     JLabel lbtca2d = new JLabel("Cellular Automaton 2D Simulator");
@@ -107,7 +107,8 @@ public class GUI{
     btnChemicalReaction.setVisible(false);
     btnChemicalReaction.addActionListener(new ActionListener(){
       public void actionPerformed(ActionEvent e){
-        System.out.println("hi");
+        GUIBelZab g = new GUIBelZab();
+        g.setVisible();
       }
     });
 
