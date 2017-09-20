@@ -160,7 +160,7 @@ public class GUIgol{
         stop=false;
 
         t = new Thread(new Runnable(){
-          public void run(){compute(); }
+          public void run(){ compute();}
         });
 
         t.start();
@@ -252,7 +252,7 @@ public class GUIgol{
   }
 
   public void paint(Graphics g, int[][] m) throws InterruptedException{
-    BufferedImage image=new BufferedImage(m[0].length, m.length, BufferedImage.TYPE_INT_RGB);
+    BufferedImage image=new BufferedImage(m.length, m[0].length, BufferedImage.TYPE_INT_RGB);
     for (int f=0;f<m.length ; ++f){
       for(int c=0; c<m[0].length; ++c){
         if(m[f][c]==0){
@@ -265,7 +265,7 @@ public class GUIgol{
         }
       }
     }
-    g.drawImage(image, 0, 0, panel.getWidth(),panel.getHeight(), panel);
+    g.drawImage(image, 0, 0, panel.getHeight(),panel.getWidth(), panel);
   }
 
 }
