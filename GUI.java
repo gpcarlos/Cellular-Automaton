@@ -97,7 +97,8 @@ public class GUI{
     btnGameOfLife.setVisible(false);
     btnGameOfLife.addActionListener(new ActionListener(){
       public void actionPerformed(ActionEvent e){
-        System.out.println("hi");
+        GUIgol g = new GUIgol();
+        g.setVisible();
       }
     });
 
