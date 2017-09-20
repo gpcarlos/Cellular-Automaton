@@ -117,7 +117,8 @@ public class GUI{
     btnTumorGrowth.setVisible(false);
     btnTumorGrowth.addActionListener(new ActionListener(){
       public void actionPerformed(ActionEvent e){
-        System.out.println("hi");
+        GUITumorG g = new GUITumorG();
+        g.setVisible();
       }
     });
 
