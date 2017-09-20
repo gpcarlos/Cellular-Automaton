@@ -4,7 +4,6 @@
 */
 
 import java.util.Random;
-import java.util.Scanner;
 import java.util.concurrent.CyclicBarrier;
 
 public class CA1DSimulator implements Runnable{

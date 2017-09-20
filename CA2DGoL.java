@@ -1,10 +1,9 @@
 /**
-* Class CA2DGoL that emulates Conway's Game of Life
+* Class CA2DGoL that emulates the Conway's Game of Life
 * @author Carlos Gallardo Polanco
 */
 
 import java.util.Random;
-import java.util.Scanner;
 import java.util.concurrent.CyclicBarrier;
 
 public class CA2DGoL implements Runnable{

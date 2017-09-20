@@ -1,5 +1,5 @@
 /**
-* Class CA2DTumorG that emules a tumor growth
+* Class CA2DTumorG that emultes a tumor growth
 * @author Carlos Gallardo Polanco
 */
 
@@ -51,8 +51,8 @@ public class CA2DTumorG implements Runnable{
   public void run(){
     compute();
       if(thread==0){
-        if(p==0){p=1; q=0;}
-        else{p=0; q=1;}
+        if(p==0){ p=1; q=0;}
+        else{ p=0; q=1;}
       }
   }
 
@@ -95,10 +95,10 @@ public class CA2DTumorG implements Runnable{
             double rpo = rd.nextDouble();
             double[] P = probabilities(x, y);
             int i=x, j=y;
-            if(0<=rpo && rpo<=P[0] ){i=x-1; j=y;}else{
-              if(P[0]<rpo && rpo<=P[0]+P[1]){i=x+1; j=y;}else{
-                if(P[0]+P[1]<rpo && rpo<=P[0]+P[1]+P[2]){i=x; j=y-1;}else{
-                  if(P[0]+P[1]+P[2]<rpo && rpo<=1){i=x; j=y+1;}
+            if(0<=rpo && rpo<=P[0] ){ i=x-1; j=y;}else{
+              if(P[0]<rpo && rpo<=P[0]+P[1]){ i=x+1; j=y;}else{
+                if(P[0]+P[1]<rpo && rpo<=P[0]+P[1]+P[2]){ i=x; j=y-1;}else{
+                  if(P[0]+P[1]+P[2]<rpo && rpo<=1){ i=x; j=y+1;}
                 }
               }
             }
@@ -109,15 +109,15 @@ public class CA2DTumorG implements Runnable{
                 double rrm = rd.nextDouble();
                 if(rrm<Pm){ //Migrate?
                   cells[x][y][q]=0;
-                  if(i>=0&&nCells>i&&j>=0&&nCells>j){cells[i][j][q]=1;}
-                  else{cells[x][y][q]=1;}
-                }else{cells[x][y][q]=1;}
+                  if(i>=0&&nCells>i&&j>=0&&nCells>j){ cells[i][j][q]=1;}
+                  else{ cells[x][y][q]=1;}
+                }else{ cells[x][y][q]=1;}
               }else{PH++;}
             }
             if(proliferate){
               cells[x][y][q]=1;
               if(i<0||nCells-1<i||j<0||nCells-1<j){}
-              else{cells[i][j][q]=1;}
+              else{ cells[i][j][q]=1;}
             }
           }else{cells[x][y][q]=0;}
         }
@@ -130,7 +130,7 @@ public class CA2DTumorG implements Runnable{
   }
 
   /**
-   * probabilities method calcule the probabilities of the cell
+   * probabilities method calcules the probabilities of the cell
    * @param  int x             cell row
    * @param  int y             cell column
    * @return     Probabilities of the cell

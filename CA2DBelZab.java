@@ -1,11 +1,10 @@
 /**
-* Class CA2DBelZab that emules Belousov–Zhabotinsky reaction
+* Class CA2DBelZab that emultes the Belousov–Zhabotinsky reaction
 * @author Carlos Gallardo Polanco
 */
 
 import java.awt.Color;
 import java.util.Random;
-import java.util.Scanner;
 import java.util.concurrent.CyclicBarrier;
 
 public class CA2DBelZab implements Runnable{
@@ -43,8 +42,8 @@ public class CA2DBelZab implements Runnable{
   public void run(){
     compute();
     if(thread==0){
-      if(p==0){p=1; q=0;}
-      else{p=0; q=1;}
+      if(p==0){ p=1; q=0;}
+      else{ p=0; q=1;}
     }
   }
 
