@@ -32,7 +32,7 @@ public class GUIca1ds{
   private JPanel panel;
   private CA1DSimulator ca1D = new CA1DSimulator();
   private int cores = Runtime.getRuntime().availableProcessors();
-  private int nGen=620, nCells=655, rule=0;
+  private int nGen=655, nCells=655, rule=0;
 
   public static void main(String[] args){
     EventQueue.invokeLater(new Runnable(){
@@ -53,12 +53,12 @@ public class GUIca1ds{
 
   public void initialize(){
     frame = new JFrame();
-    frame.setBounds(100, 100, 805, 712);
+    frame.setBounds(100, 100, 805, 740);
     frame.getContentPane().setLayout(null);
 
     panel = new JPanel();
     panel.setBackground(Color.WHITE);
-    panel.setBounds(10, 42, 655, 620);
+    panel.setBounds(10, 42, 655, 655);
     frame.getContentPane().add(panel);
 
     JLabel lbtTittle = new JLabel("Cellular Automaton 1D Simulator");
