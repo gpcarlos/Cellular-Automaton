@@ -74,7 +74,7 @@ public class GUIMandelbrot{
     panel.setBounds(10, 42, 655, 655);
     frame.getContentPane().add(panel);
 
-    JLabel lbtTittle = new JLabel("Cellular Automaton 2D Simulator - Mandelbrot Set");
+    JLabel lbtTittle = new JLabel("Mandelbrot Set");
     lbtTittle.setVerticalAlignment(SwingConstants.TOP);
     lbtTittle.setHorizontalAlignment(SwingConstants.LEFT);
     lbtTittle.setFont(new Font("Dialog", Font.BOLD, 20));
@@ -97,8 +97,7 @@ public class GUIMandelbrot{
     btnSimulate.setBounds(677, 110, 117, 55);
     frame.getContentPane().add(btnSimulate);
     btnSimulate.addActionListener(new ActionListener(){
-			public void actionPerformed(ActionEvent e){
-
+      public void actionPerformed(ActionEvent e){
         lbtIterations.setVisible(false);
         spIter.setVisible(false);
         btnSimulate.setVisible(false);
@@ -110,7 +109,7 @@ public class GUIMandelbrot{
 
         t.start();
       }
-		});
+    });
 
     lbtWorking.setHorizontalAlignment(SwingConstants.CENTER);
     lbtWorking.setBounds(677, 110, 117, 55);
@@ -123,7 +122,6 @@ public class GUIMandelbrot{
   }
 
   public void compute(){
-
     MandelSet.setup(nIter, panel.getHeight());
 
     ExecutorService ex = Executors.newFixedThreadPool(cores);

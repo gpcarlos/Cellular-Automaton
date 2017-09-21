@@ -91,7 +91,7 @@ public class GUITumorG{
     label_Ps.setToolTipText("Probability of cell survival");
     frame.getContentPane().add(label_Ps);
 
-		JSpinner spinner_Ps = new JSpinner();
+    JSpinner spinner_Ps = new JSpinner();
     spinner_Ps.setFont(new Font("Dialog", Font.BOLD, 10));
     spinner_Ps.setBounds(690, 55, 42, 20);
     spinner_Ps.setModel(new SpinnerNumberModel(Ps, 0, 1, 0.01));
@@ -187,7 +187,7 @@ public class GUITumorG{
     btnSimulate.setBounds(677, 260, 117, 55);
     frame.getContentPane().add(btnSimulate);
     btnSimulate.addActionListener(new ActionListener(){
-        public void actionPerformed(ActionEvent e){
+      public void actionPerformed(ActionEvent e){
         lbtDimension.setVisible(false);
         spDim.setVisible(false);
         btnSimulate.setVisible(false);

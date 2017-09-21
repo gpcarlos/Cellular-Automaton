@@ -147,7 +147,7 @@ public class GUIgol{
     btnSimulate.setBounds(677, 243, 117, 55);
     frame.getContentPane().add(btnSimulate);
     btnSimulate.addActionListener(new ActionListener(){
-			public void actionPerformed(ActionEvent e){
+      public void actionPerformed(ActionEvent e){
         btnSimulate.setVisible(false);
         btnStop.setVisible(true);
         lbtDimension.setVisible(false);

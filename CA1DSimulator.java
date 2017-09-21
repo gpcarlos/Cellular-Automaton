@@ -22,11 +22,11 @@ public class CA1DSimulator implements Runnable{
    * @param  int ulimit        upper limit
    * @param  int llimit        lower limit
    */
-	public CA1DSimulator(int ulimit, int llimit){
-		this.ulimit=ulimit;
-		this.llimit=llimit;
-		this.sucessor = new int[nCells];
-	}
+  public CA1DSimulator(int ulimit, int llimit){
+    this.ulimit=ulimit;
+    this.llimit=llimit;
+    this.sucessor = new int[nCells];
+  }
   /**
    * No-argument constructor
    */

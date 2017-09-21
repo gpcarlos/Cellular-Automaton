@@ -86,7 +86,7 @@ public class GUIBelZab{
     lbl_Alpha.setBounds(672, 55, 17, 20);
     frame.getContentPane().add(lbl_Alpha);
 
-		JSpinner spinner_Alpha = new JSpinner();
+    JSpinner spinner_Alpha = new JSpinner();
     spinner_Alpha.setBounds(685, 55, 42, 20);
     spinner_Alpha.setModel(new SpinnerNumberModel(alpha, 0, 2, 0.1));
     frame.getContentPane().add(spinner_Alpha);
@@ -143,7 +143,7 @@ public class GUIBelZab{
     btnSimulate.setBounds(677, 176, 117, 55);
     frame.getContentPane().add(btnSimulate);
     btnSimulate.addActionListener(new ActionListener(){
-        public void actionPerformed(ActionEvent e){
+      public void actionPerformed(ActionEvent e){
         lbtDimension.setVisible(false);
         spDim.setVisible(false);
         btnSimulate.setVisible(false);
@@ -156,7 +156,7 @@ public class GUIBelZab{
 
         t.start();
       }
-		});
+    });
 
     btnStop.setBounds(677, 176, 117, 55);
     frame.getContentPane().add(btnStop);

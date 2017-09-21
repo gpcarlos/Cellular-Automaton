@@ -22,11 +22,11 @@ public class CA2DGoL implements Runnable{
    * @param  int llimit        lower limit
    * @param  int thread        thread number
    */
-	public CA2DGoL(int ulimit, int llimit, int thread){
-  	this.ulimit=ulimit;
-		this.llimit=llimit;
+  public CA2DGoL(int ulimit, int llimit, int thread){
+    this.ulimit=ulimit;
+    this.llimit=llimit;
     this.thread=thread;
-	}
+  }
   /**
    * No-argument constructor
    */
