@@ -40,6 +40,7 @@ public class GUI{
     frame.setBounds(100, 100, 204, 300);
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.getContentPane().setLayout(null);
+    frame.setResizable(false);
 
     JButton btnCA1DSimulator = new JButton("CA1D Simulator");
     JButton btnCA2DSimulator = new JButton("CA2D Simulator");

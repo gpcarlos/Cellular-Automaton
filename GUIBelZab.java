@@ -68,6 +68,7 @@ public class GUIBelZab{
     frame = new JFrame();
     frame.setBounds(100, 100, 805, 740);
     frame.getContentPane().setLayout(null);
+    frame.setResizable(false);
 
     panel = new JPanel();
     panel.setBackground(Color.WHITE);
