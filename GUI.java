@@ -82,7 +82,8 @@ public class GUI{
     btnMandelbrotSet.setVisible(true);
     btnMandelbrotSet.addActionListener(new ActionListener(){
       public void actionPerformed(ActionEvent e){
-        System.out.println("hi");
+        GUIMandelbrot g = new GUIMandelbrot();
+        g.setVisible();
       }
     });
 
